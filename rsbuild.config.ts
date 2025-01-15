@@ -7,6 +7,7 @@ export default defineConfig({
     pluginReact(),
     pluginModuleFederation({
       name: 'web_auth_provider',
+	  filename: 'remoteEntry.js',
       exposes: {
         './button': './src/button.tsx',
       },
